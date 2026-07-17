@@ -1,456 +1,176 @@
-/* ============================================================
-   SOLAR CARE GROUP — design system
-   Palette: deep green (industrial, vegetation) + gold (solar/sun)
-   Signature motif: the solar-cell grid + the "clean sweep"
-   ============================================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Solar Care Group</title>
+<meta name="description" content="The story, mission, vision and structure of Solar Care Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="10.5" height="10.5" fill="#C89B3C"/>
+<rect x="14.5" y="1" width="10.5" height="10.5" fill="#254E3B"/>
+<rect x="1" y="14.5" width="10.5" height="10.5" fill="#254E3B"/>
+<rect x="14.5" y="14.5" width="10.5" height="10.5" fill="#E0BE72"/>
+</svg><span>SOLAR CARE <span class="accent">GROUP</span></span></a>
+      <nav class="main-nav">
+      <a href="index.html"><span data-i18n="nav.home">Home</span></a>
+      <a href="about.html" class="active"><span data-i18n="nav.about">About Us</span></a>
+      <a href="services.html"><span data-i18n="nav.services">Services</span></a>
+      <a href="hse-quality.html"><span data-i18n="nav.hse">HSE & Quality</span></a>
+      <a href="projects.html"><span data-i18n="nav.projects">Projects</span></a>
+      <a href="careers.html"><span data-i18n="nav.careers">Careers</span></a>
+      <a href="contact.html"><span data-i18n="nav.contact">Contact</span></a>
+      <a href="contact.html#quote" class="btn-quote"><span data-i18n="nav.quote">Request a Quote</span></a>
+      <div class="lang-switch">
+        <button class="lang-toggle mono" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-current">EN</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option active" type="button" data-lang="en">EN <span>English</span></button>
+          <button class="lang-option" type="button" data-lang="ru">RU <span>Русский</span></button>
+          <button class="lang-option" type="button" data-lang="uz">UZ <span>O'zbek</span></button>
+        </div>
+      </div>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
 
-:root{
-  --green-950:#0F221C;
-  --green-900:#14291F;
-  --green-800:#1B3A2C;
-  --green-700:#254E3B;
-  --green-600:#336650;
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb mono"><a href="index.html"><span data-i18n="nav.home">Home</span></a> / <span data-i18n="nav.about">About Us</span></div>
+    <h1 data-i18n="about.hero_h1">A dedicated crew for solar and industrial sites.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.68); max-width:56ch; margin-top:16px;" data-i18n="about.hero_lede">Solar Care Group was formed to give solar and industrial site operators one reliable partner for the recurring, on-the-ground work that keeps a site running.</p>
+  </div>
+</section>
 
-  --gold-600:#A87B2A;
-  --gold-500:#C89B3C;
-  --gold-300:#E0BE72;
-  --gold-100:#F3E4C0;
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="tag"><span data-i18n="about.story_tag">Our Story</span></span>
+        <h2 data-i18n="about.story_h2">Why Solar Care Group exists</h2>
+        <p data-i18n="about.story_p1">Solar and industrial sites depend on work that's easy to overlook until it's neglected — clean panels, controlled vegetation, maintained access roads, and a crew that shows up. Solar Care Group was built to own that work fully, so site teams can focus on operations rather than coordinating multiple contractors.</p>
+        <p data-i18n="about.story_p2">We operate as an Uzbekistan-based service company, structured to work directly alongside site management, under their safety rules and reporting lines.</p>
+      </div>
+      <div class="card-white cell-grid-bg" style="padding:36px;">
+        <h3 class="mono" style="font-size:.8rem; color:var(--gold-600);" data-i18n="about.glance_h3">At a glance</h3>
+        <ul class="value-list" style="border-top:none; margin-top:10px;">
+          <li style="border-top:none;"><span class="num">&rarr;</span><p style="margin:0;" data-i18n="about.glance_1">Full-scope site service: cleaning, vegetation, maintenance, manpower, logistics.</p></li>
+          <li><span class="num">&rarr;</span><p style="margin:0;" data-i18n="about.glance_2">HSE and quality policy applied before work planning, not after.</p></li>
+          <li><span class="num">&rarr;</span><p style="margin:0;" data-i18n="about.glance_3">Based in Uzbekistan, built to support local and regional sites.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-  --cream:#F6F3EA;
-  --cream-2:#EFEAD9;
-  --white:#FFFFFF;
+<div class="cell-rule"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
-  --ink:#16201B;
-  --ink-soft:#4B564E;
-  --ink-faint:#8B9690;
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono eyebrow"><span data-i18n="about.mission_eyebrow">Mission & Vision</span></span>
+      <h2 data-i18n="about.mission_h2">What we're working toward</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="num"><span data-i18n="about.mission_label">Mission</span></div>
+        <h3 data-i18n="about.mission_h3">Reliable site care, without the coordination overhead</h3>
+        <p data-i18n="about.mission_p">To deliver dependable cleaning, maintenance and support services that protect the performance and safety of every site we work on — as a single accountable team.</p>
+      </div>
+      <div class="card">
+        <div class="num"><span data-i18n="about.vision_label">Vision</span></div>
+        <h3 data-i18n="about.vision_h3">The regional standard for solar site service</h3>
+        <p data-i18n="about.vision_p">To become a trusted, long-term service partner for solar and industrial operators across Uzbekistan and the wider region.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  --line: rgba(23,32,27,0.12);
-  --line-on-dark: rgba(255,255,255,0.14);
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono eyebrow"><span data-i18n="about.values_eyebrow">Values</span></span>
+      <h2 data-i18n="about.values_h2">How we operate on site</h2>
+    </div>
+    <ul class="value-list">
+      <li><span class="num">01</span><div><h3 style="margin-bottom:4px;" data-i18n="about.value1_h">Safety before speed</h3><p style="margin:0;" data-i18n="about.value1_p">No task is worth rushing on an active site. HSE requirements set the pace of the work.</p></div></li>
+      <li><span class="num">02</span><div><h3 style="margin-bottom:4px;" data-i18n="about.value2_h">Accountability</h3><p style="margin:0;" data-i18n="about.value2_p">One team, one point of contact, for every service on the site.</p></div></li>
+      <li><span class="num">03</span><div><h3 style="margin-bottom:4px;" data-i18n="about.value3_h">Consistency</h3><p style="margin:0;" data-i18n="about.value3_p">Scheduled work happens on schedule — cleaning and maintenance cycles are held to, not treated as flexible.</p></div></li>
+      <li><span class="num">04</span><div><h3 style="margin-bottom:4px;" data-i18n="about.value4_h">Transparency</h3><p style="margin:0;" data-i18n="about.value4_p">Clear scopes and quotes before mobilization, with no surprise scope creep on site.</p></div></li>
+    </ul>
+  </div>
+</section>
 
-  --radius: 2px;
-  --maxw: 1180px;
+<section class="section-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono eyebrow" style="color:var(--gold-300);"><span data-i18n="about.org_eyebrow">Organizational Structure</span></span>
+      <h2 data-i18n="about.org_h2">How the team is organized</h2>
+      <p data-i18n="about.org_p">Solar Care Group is organized around site delivery, with clear ownership from quotation through to on-site execution.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card" style="background:var(--green-900);"><div class="num" style="color:var(--gold-300);"><span data-i18n="about.org1_label">Leadership</span></div><h3 style="color:#fff;" data-i18n="about.org1_h">Management</h3><p data-i18n="about.org1_p">Sets policy, client relationships and overall site standards.</p></div>
+      <div class="card" style="background:var(--green-900);"><div class="num" style="color:var(--gold-300);"><span data-i18n="about.org2_label">Delivery</span></div><h3 style="color:#fff;" data-i18n="about.org2_h">Operations & Site Crews</h3><p data-i18n="about.org2_p">Plans and runs cleaning, maintenance and manpower work on site.</p></div>
+      <div class="card" style="background:var(--green-900);"><div class="num" style="color:var(--gold-300);"><span data-i18n="about.org3_label">Support</span></div><h3 style="color:#fff;" data-i18n="about.org3_h">HSE, Quality & Logistics</h3><p data-i18n="about.org3_p">Oversees compliance, quality checks and equipment/transport coordination.</p></div>
+    </div>
+  </div>
+</section>
 
-  --shadow-soft: 0 12px 32px rgba(15,34,28,0.10);
-}
-
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  margin:0;
-  background:var(--cream);
-  color:var(--ink);
-  font-family:'Inter',system-ui,-apple-system,sans-serif;
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-
-h1,h2,h3,h4{
-  font-family:'Space Grotesk',system-ui,sans-serif;
-  color:var(--green-950);
-  margin:0 0 .5em 0;
-  line-height:1.12;
-  letter-spacing:-0.01em;
-  font-weight:600;
-}
-h1{font-size:clamp(2.4rem,5vw,4.2rem); letter-spacing:-0.02em;}
-h2{font-size:clamp(1.7rem,3vw,2.6rem);}
-h3{font-size:1.25rem;}
-p{margin:0 0 1em 0; color:var(--ink-soft);}
-a{color:inherit; text-decoration:none;}
-img{max-width:100%; display:block;}
-
-.mono{
-  font-family:'IBM Plex Mono',monospace;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  font-size:.72rem;
-}
-
-.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
-
-/* ---------- cell grid signature ---------- */
-.cell-rule{
-  height:10px;
-  display:flex;
-  gap:3px;
-  overflow:hidden;
-}
-.cell-rule span{
-  flex:1 1 14px;
-  max-width:14px;
-  background:var(--gold-500);
-  opacity:.55;
-}
-.cell-rule.dark span{background:var(--green-700); opacity:.7;}
-
-.cell-grid-bg{
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size:34px 34px;
-}
-
-/* ---------- header ---------- */
-.site-header{
-  position:sticky; top:0; z-index:50;
-  background:var(--green-950);
-  border-bottom:1px solid var(--line-on-dark);
-}
-.header-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:16px 28px;
-  max-width:var(--maxw); margin:0 auto;
-}
-.logo{
-  display:flex; align-items:center; gap:10px;
-  color:var(--white); font-family:'Space Grotesk',sans-serif;
-  font-weight:600; font-size:1.05rem; letter-spacing:.01em;
-}
-.logo svg{flex:none;}
-.logo .accent{color:var(--gold-400,#C89B3C);}
-
-nav.main-nav{display:flex; align-items:center; gap:2px;}
-nav.main-nav a{
-  color:rgba(255,255,255,.78);
-  font-size:.86rem;
-  padding:10px 14px;
-  position:relative;
-  transition:color .15s ease;
-}
-nav.main-nav a:hover{color:var(--white);}
-nav.main-nav a.active{color:var(--white);}
-nav.main-nav a.active::after{
-  content:"";
-  position:absolute; left:14px; right:14px; bottom:4px;
-  height:2px; background:var(--gold-500);
-}
-.btn-quote{
-  background:var(--gold-500);
-  color:var(--green-950) !important;
-  font-weight:600;
-  padding:10px 18px !important;
-  border-radius:var(--radius);
-  margin-left:8px;
-}
-.btn-quote:hover{background:var(--gold-300);}
-
-.nav-toggle{
-  display:none;
-  background:none; border:none; cursor:pointer;
-  padding:6px; color:var(--white);
-}
-.nav-toggle svg{width:24px; height:24px;}
-
-/* ---------- language switcher ---------- */
-.lang-switch{position:relative; margin-left:10px;}
-.lang-toggle{
-  display:flex; align-items:center; gap:6px;
-  background:transparent; border:1px solid var(--line-on-dark);
-  color:rgba(255,255,255,.82);
-  padding:8px 12px; border-radius:20px;
-  cursor:pointer; font-size:.72rem;
-}
-.lang-toggle:hover{border-color:rgba(255,255,255,.4); color:var(--white);}
-.lang-toggle svg{transition:transform .15s ease;}
-.lang-switch.open .lang-toggle svg{transform:rotate(180deg);}
-
-.lang-dropdown{
-  position:absolute; top:calc(100% + 8px); right:0;
-  background:var(--green-900);
-  border:1px solid var(--line-on-dark);
-  border-radius:6px;
-  min-width:150px;
-  padding:6px;
-  display:flex; flex-direction:column; gap:2px;
-  opacity:0; visibility:hidden; transform:translateY(-6px);
-  transition:opacity .15s ease, transform .15s ease;
-  z-index:60;
-  box-shadow:var(--shadow-soft);
-}
-.lang-dropdown.open{opacity:1; visibility:visible; transform:translateY(0);}
-.lang-option{
-  display:flex; align-items:baseline; gap:8px;
-  background:none; border:none; cursor:pointer;
-  color:rgba(255,255,255,.72);
-  padding:9px 10px; border-radius:4px;
-  font-family:'IBM Plex Mono',monospace; font-size:.76rem; letter-spacing:.04em;
-  text-align:left;
-}
-.lang-option span{
-  font-family:'Inter',sans-serif; letter-spacing:normal;
-  text-transform:none; color:rgba(255,255,255,.5); font-size:.85rem;
-}
-.lang-option:hover{background:rgba(255,255,255,.06); color:var(--white);}
-.lang-option.active{color:var(--gold-300);}
-.lang-option.active span{color:var(--gold-100);}
-
-@media (max-width:900px){
-  .lang-switch{margin:14px 0 0 0;}
-  .lang-toggle{width:100%; justify-content:space-between; padding:12px 14px; border-radius:4px;}
-  .lang-dropdown{position:static; opacity:1; visibility:visible; transform:none; box-shadow:none; border:none; padding:0; margin-top:4px; display:none;}
-  .lang-switch.open .lang-dropdown{display:flex;}
-}
-
-@media (max-width:900px){
-  nav.main-nav{
-    position:fixed; inset:64px 0 0 0;
-    background:var(--green-950);
-    flex-direction:column; align-items:stretch;
-    padding:12px 20px;
-    transform:translateY(-8px);
-    opacity:0; pointer-events:none;
-    transition:opacity .2s ease, transform .2s ease;
-  }
-  nav.main-nav.open{opacity:1; pointer-events:auto; transform:translateY(0);}
-  nav.main-nav a{padding:16px 4px; border-bottom:1px solid var(--line-on-dark); font-size:1rem;}
-  .btn-quote{margin:14px 0 0 0; text-align:center;}
-  .nav-toggle{display:inline-flex;}
-}
-
-/* ---------- hero ---------- */
-.hero{
-  position:relative;
-  background:var(--green-950);
-  color:var(--white);
-  overflow:hidden;
-  padding:96px 0 84px;
-}
-.hero .wrap{position:relative; z-index:2;}
-.hero-grid{
-  position:absolute; inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-  background-size:38px 38px;
-  mask-image:linear-gradient(180deg, transparent, black 30%, black 70%, transparent);
-}
-.hero-sweep{
-  position:absolute; top:0; bottom:0; width:46%;
-  background:linear-gradient(100deg, transparent, rgba(200,155,60,.28) 45%, rgba(224,190,114,.5) 50%, rgba(200,155,60,.28) 55%, transparent);
-  filter:blur(2px);
-  animation:sweep 4.5s ease-in-out .3s 1;
-  z-index:1;
-}
-@keyframes sweep{
-  0%{ transform:translateX(-140%); }
-  60%{ transform:translateX(220%); }
-  100%{ transform:translateX(220%); }
-}
-@media (prefers-reduced-motion:reduce){ .hero-sweep{animation:none; display:none;} }
-
-.eyebrow{
-  color:var(--gold-300);
-  display:inline-block; margin-bottom:18px;
-}
-.hero h1{color:var(--white); max-width:15ch;}
-.hero .lede{
-  color:rgba(255,255,255,.72);
-  font-size:1.15rem; max-width:46ch; margin-top:18px;
-}
-.hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
-
-.btn{
-  display:inline-block;
-  padding:13px 24px;
-  border-radius:var(--radius);
-  font-weight:600; font-size:.92rem;
-  border:1px solid transparent;
-  transition:all .15s ease;
-}
-.btn-primary{background:var(--gold-500); color:var(--green-950);}
-.btn-primary:hover{background:var(--gold-300);}
-.btn-ghost{border-color:rgba(255,255,255,.35); color:var(--white);}
-.btn-ghost:hover{border-color:var(--white); background:rgba(255,255,255,.06);}
-.btn-outline{border-color:var(--green-800); color:var(--green-950);}
-.btn-outline:hover{background:var(--green-950); color:var(--white);}
-
-/* ---------- section basics ---------- */
-section{padding:88px 0;}
-.section-tight{padding:56px 0;}
-.section-head{max-width:56ch; margin-bottom:48px;}
-.section-head .eyebrow{color:var(--gold-600);}
-.section-alt{background:var(--white);}
-.section-dark{background:var(--green-950); color:var(--white);}
-.section-dark h2, .section-dark h3{color:var(--white);}
-.section-dark p{color:rgba(255,255,255,.68);}
-
-/* ---------- cards ---------- */
-.grid{display:grid; gap:1px; background:var(--line);}
-.grid.cols-3{grid-template-columns:repeat(3,1fr);}
-.grid.cols-2{grid-template-columns:repeat(2,1fr);}
-@media (max-width:800px){ .grid.cols-3, .grid.cols-2{grid-template-columns:1fr;} }
-
-.card{
-  background:var(--cream);
-  padding:34px 30px;
-  transition:background .15s ease;
-}
-.card:hover{background:var(--white);}
-.card .num{font-family:'IBM Plex Mono',monospace; color:var(--gold-600); font-size:.78rem; letter-spacing:.06em;}
-.card h3{margin-top:10px;}
-.card p{margin-bottom:0;}
-
-.card-white{
-  background:var(--white);
-  border:1px solid var(--line);
-  padding:30px;
-}
-
-/* ---------- stats strip ---------- */
-.stats{
-  display:grid; grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--line-on-dark);
-  border-bottom:1px solid var(--line-on-dark);
-}
-.stats .stat{
-  padding:28px 24px;
-  border-right:1px solid var(--line-on-dark);
-}
-.stats .stat:last-child{border-right:none;}
-.stat .num{font-family:'Space Grotesk',sans-serif; font-size:2.1rem; color:var(--gold-300); font-weight:600;}
-.stat .label{color:rgba(255,255,255,.62); font-size:.82rem; margin-top:4px;}
-@media (max-width:800px){
-  .stats{grid-template-columns:repeat(2,1fr);}
-  .stats .stat:nth-child(2){border-right:none;}
-}
-
-/* ---------- footer ---------- */
-footer{
-  background:var(--green-950);
-  color:rgba(255,255,255,.6);
-  padding:56px 0 26px;
-}
-.footer-grid{
-  display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px;
-  padding-bottom:36px; border-bottom:1px solid var(--line-on-dark);
-}
-.footer-grid h4{color:var(--white); font-size:.85rem; margin-bottom:14px;}
-.footer-grid a{display:block; color:rgba(255,255,255,.6); font-size:.9rem; padding:5px 0;}
-.footer-grid a:hover{color:var(--gold-300);}
-.footer-social{display:flex; gap:10px; margin-top:14px;}
-.footer-social a{
-  display:flex; align-items:center; justify-content:center;
-  width:34px; height:34px; padding:0;
-  border:1px solid var(--line-on-dark); border-radius:50%;
-  color:rgba(255,255,255,.7);
-  transition:all .15s ease;
-}
-.footer-social a:hover{border-color:var(--gold-500); color:var(--gold-300); background:rgba(200,155,60,.08);}
-.footer-bottom{
-  display:flex; justify-content:space-between; align-items:center;
-  padding-top:22px; font-size:.8rem; flex-wrap:wrap; gap:10px;
-}
-@media (max-width:800px){ .footer-grid{grid-template-columns:1fr 1fr;} }
-
-/* ---------- breadcrumb / page header ---------- */
-.page-hero{
-  background:var(--green-950); color:var(--white);
-  padding:64px 0 48px;
-}
-.page-hero h1{color:var(--white); max-width:26ch;}
-.crumb{color:rgba(255,255,255,.5); margin-bottom:14px;}
-.crumb a:hover{color:var(--gold-300);}
-
-/* ---------- lists / values ---------- */
-.value-list{list-style:none; margin:0; padding:0;}
-.value-list li{
-  display:flex; gap:16px; padding:20px 0;
-  border-top:1px solid var(--line);
-}
-.value-list li:last-child{border-bottom:1px solid var(--line);}
-.value-list .num{font-family:'IBM Plex Mono',monospace; color:var(--gold-600); font-size:.85rem; padding-top:2px;}
-
-/* ---------- forms ---------- */
-.form-field{margin-bottom:20px;}
-.form-field label{
-  display:block; margin-bottom:7px;
-  font-family:'IBM Plex Mono',monospace; font-size:.72rem;
-  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft);
-}
-.form-field input, .form-field select, .form-field textarea{
-  width:100%; padding:13px 14px;
-  border:1px solid var(--line);
-  background:var(--white);
-  border-radius:var(--radius);
-  font-family:inherit; font-size:.95rem; color:var(--ink);
-}
-.form-field input:focus, .form-field select:focus, .form-field textarea:focus{
-  outline:2px solid var(--gold-500); outline-offset:1px; border-color:var(--gold-500);
-}
-.form-field textarea{resize:vertical; min-height:120px;}
-.form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
-@media (max-width:700px){ .form-row{grid-template-columns:1fr;} }
-.form-note{font-size:.82rem; color:var(--ink-faint); margin-top:-6px;}
-.form-success{
-  display:none; background:var(--green-950); color:var(--white);
-  padding:16px 18px; border-left:3px solid var(--gold-500); margin-top:16px;
-  font-size:.92rem;
-}
-.form-success.show{display:block;}
-.form-success.form-error{background:#3A1414; border-left-color:#D65454;}
-.form-success.form-error::before{content:"Something went wrong — "; }
-
-/* ---------- photo grid (services gallery) ---------- */
-.photo-grid{
-  display:grid; grid-template-columns:repeat(3,1fr); gap:2px;
-  background:var(--line);
-}
-@media (max-width:800px){ .photo-grid{grid-template-columns:repeat(2,1fr);} }
-@media (max-width:520px){ .photo-grid{grid-template-columns:1fr;} }
-.photo-tile{
-  position:relative;
-  aspect-ratio:1/1;
-  background-color:var(--green-800);
-  background-image: linear-gradient(135deg, var(--green-700), var(--green-950));
-  overflow:hidden;
-}
-.photo-tile img{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  object-fit:cover;
-  z-index:0;
-  transition:transform .5s ease;
-}
-.photo-tile:hover img{transform:scale(1.08);}
-.photo-tile{ cursor:default; }
-.photo-tile::before{
-  content:"";
-  position:absolute; inset:0;
-  opacity:.5;
-  background-image:
-    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
-  background-size:22px 22px;
-}
-.photo-tile .icon{
-  position:absolute; inset:0;
-  display:flex; align-items:center; justify-content:center;
-  color:rgba(224,190,114,.35);
-}
-.photo-tile .icon svg{width:56px; height:56px;}
-.photo-tile::after{
-  content:"";
-  position:absolute; inset:0;
-  background:linear-gradient(180deg, transparent 45%, rgba(15,34,28,.92) 100%);
-}
-.photo-tile .cap{
-  position:absolute; left:0; right:0; bottom:0;
-  padding:18px; z-index:2;
-}
-.photo-tile .cap .num{font-family:'IBM Plex Mono',monospace; color:var(--gold-300); font-size:.7rem; letter-spacing:.06em;}
-.photo-tile .cap h3{color:#fff; margin:4px 0 0; font-size:1rem;}
-.photo-tile.has-img::before, .photo-tile.has-img .icon{display:none;}
-
-/* ---------- misc ---------- */
-.split{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;}
-@media (max-width:850px){ .split{grid-template-columns:1fr; gap:32px;} }
-.tag{
-  display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:.7rem;
-  letter-spacing:.06em; text-transform:uppercase; color:var(--gold-600);
-  border:1px solid var(--gold-500); padding:4px 10px; border-radius:20px;
-  margin-bottom:8px;
-}
-.divider{height:1px; background:var(--line); margin:0;}
-
-:focus-visible{outline:2px solid var(--gold-500); outline-offset:2px;}
+<footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom:14px;"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="10.5" height="10.5" fill="#C89B3C"/>
+<rect x="14.5" y="1" width="10.5" height="10.5" fill="#254E3B"/>
+<rect x="1" y="14.5" width="10.5" height="10.5" fill="#254E3B"/>
+<rect x="14.5" y="14.5" width="10.5" height="10.5" fill="#E0BE72"/>
+</svg><span style="color:#fff;">SOLAR CARE <span class="accent">GROUP</span></span></div>
+          <p style="max-width:32ch; font-size:.9rem;"><span data-i18n="footer.tagline">Solar panel cleaning, site maintenance and industrial support services across Uzbekistan.</span></p>
+        </div>
+        <div>
+          <h4 class="mono"><span data-i18n="footer.company">Company</span></h4>
+          <a href="about.html"><span data-i18n="nav.about">About Us</span></a>
+          <a href="hse-quality.html"><span data-i18n="nav.hse">HSE & Quality</span></a>
+          <a href="projects.html"><span data-i18n="nav.projects">Projects</span></a>
+          <a href="careers.html"><span data-i18n="nav.careers">Careers</span></a>
+        </div>
+        <div>
+          <h4 class="mono"><span data-i18n="footer.services">Services</span></h4>
+          <a href="services.html"><span data-i18n="svc.1.title">Solar Panel Cleaning</span></a>
+          <a href="services.html"><span data-i18n="svc.2.title">Vegetation & Grass Control</span></a>
+          <a href="services.html"><span data-i18n="svc.3.title">Site Maintenance</span></a>
+          <a href="services.html"><span data-i18n="svc.5.title">Manpower Supply</span></a>
+        </div>
+        <div>
+          <h4 class="mono"><span data-i18n="footer.contact">Contact</span></h4>
+          <a href="tel:+998973427633">+998 97 342 76 33</a>
+          <a href="mailto:solarcaregroupuz@gmail.com">solarcaregroupuz@gmail.com</a>
+          <a href="contact.html"><span data-i18n="footer.getintouch">Get in touch →</span></a>
+          <div class="footer-social">
+            <a href="https://instagram.com/solarcaregroup" target="_blank" rel="noopener" aria-label="Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://t.me/solarcaregroup" target="_blank" rel="noopener" aria-label="Telegram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 4L2.5 11.5l6 2M21 4L15.5 21l-7-7.5M21 4L8.5 13.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><span data-i18n="footer.copyright">© 2026 Solar Care Group. All rights reserved.</span></span>
+        <span class="mono"><span data-i18n="footer.location">Tashkent, Uzbekistan</span></span>
+      </div>
+    </div>
+  </footer>
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
