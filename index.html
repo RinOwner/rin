@@ -104,6 +104,7 @@
             <stop offset="0%" stop-color="#183324"/>
             <stop offset="100%" stop-color="#0F221C"/>
           </linearGradient>
+          <clipPath id="mascotHeadClip"><circle cx="70" cy="53" r="27"/></clipPath>
         </defs>
 
         <ellipse cx="70" cy="308" rx="46" ry="9" fill="rgba(0,0,0,.3)"/>
@@ -154,25 +155,29 @@
           <rect x="60" y="68" width="20" height="26" rx="7" fill="url(#skinGrad)"/>
           <rect x="60" y="86" width="20" height="8" fill="rgba(0,0,0,.12)"/>
 
-          <!-- head (tracks cursor) -->
+          <!-- head (static — only eyes track cursor) -->
           <g class="mascot-head" id="mascotHead">
             <circle cx="70" cy="53" r="27" fill="url(#skinGrad)"/>
             <!-- ears -->
             <circle cx="43" cy="55" r="4.5" fill="#D9AE72"/>
             <circle cx="97" cy="55" r="4.5" fill="#D9AE72"/>
-            <!-- hair -->
-            <path d="M42 50 A28 28 0 0 1 98 50 Q99 36 88 28 Q78 21 70 22 Q62 21 52 28 Q41 36 42 50Z" fill="#2A211C"/>
-            <path d="M42 50 Q40 44 44 38" stroke="#1C1611" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <path d="M98 50 Q100 44 96 38" stroke="#1C1611" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- hair (clipped to head silhouette, guaranteed correct) -->
+            <g clip-path="url(#mascotHeadClip)">
+              <path d="M39 52 Q39 25 70 24 Q101 25 101 52 Q99 37 70 35 Q41 37 39 52Z" fill="#2A211C"/>
+              <path d="M69 35 Q66 29 70 24" fill="none" stroke="#40332A" stroke-width="1.1" stroke-linecap="round"/>
+              <path d="M45 38 Q40 44 40 52" fill="none" stroke="#17110D" stroke-width="1" fill-opacity="0" stroke-opacity=".5"/>
+            </g>
             <!-- eyebrows -->
             <path d="M54 50q6-4 12-1" stroke="#2A211C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
             <path d="M74 49q6-3 12 1" stroke="#2A211C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-            <!-- eyes -->
-            <ellipse cx="60" cy="57" rx="2.6" ry="3" fill="#20140E"/>
-            <ellipse cx="80" cy="57" rx="2.6" ry="3" fill="#20140E"/>
+            <!-- eyes: whites + tracking pupils -->
+            <ellipse cx="60" cy="57" rx="4.2" ry="3.6" fill="#FBF7EE"/>
+            <ellipse cx="80" cy="57" rx="4.2" ry="3.6" fill="#FBF7EE"/>
+            <g id="mascotEyeL"><circle cx="60" cy="57" r="2.1" fill="#20140E"/><circle cx="60.8" cy="56.2" r=".6" fill="#fff" opacity=".8"/></g>
+            <g id="mascotEyeR"><circle cx="80" cy="57" r="2.1" fill="#20140E"/><circle cx="80.8" cy="56.2" r=".6" fill="#fff" opacity=".8"/></g>
             <!-- eyelids (blink) -->
-            <ellipse class="mascot-eyelid" cx="60" cy="57" rx="2.9" ry="3.4" fill="url(#skinGrad)"/>
-            <ellipse class="mascot-eyelid" cx="80" cy="57" rx="2.9" ry="3.4" fill="url(#skinGrad)"/>
+            <ellipse class="mascot-eyelid" cx="60" cy="57" rx="4.4" ry="3.8" fill="url(#skinGrad)"/>
+            <ellipse class="mascot-eyelid" cx="80" cy="57" rx="4.4" ry="3.8" fill="url(#skinGrad)"/>
             <!-- nose -->
             <path d="M69 58q1 5-1 8" stroke="#C4986A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
             <!-- mouth -->
