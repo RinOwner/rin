@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home — Solar Care Group</title>
 <meta name="description" content="Solar panel cleaning, vegetation control, site maintenance and industrial support services in Uzbekistan.">
+<link rel="canonical" href="https://solarcaregroup.com/index.html">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solar Care Group">
+<meta property="og:title" content="Home — Solar Care Group">
+<meta property="og:description" content="Solar panel cleaning, vegetation control, site maintenance and industrial support services in Uzbekistan.">
+<meta property="og:image" content="https://solarcaregroup.com/assets/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://solarcaregroup.com/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home — Solar Care Group">
+<meta name="twitter:description" content="Solar panel cleaning, vegetation control, site maintenance and industrial support services in Uzbekistan.">
+<meta name="twitter:image" content="https://solarcaregroup.com/assets/brand/og-image.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -24,6 +43,7 @@
       <a href="services.html"><span data-i18n="nav.services">Services</span></a>
       <a href="hse-quality.html"><span data-i18n="nav.hse">HSE & Quality</span></a>
       <a href="projects.html"><span data-i18n="nav.projects">Projects</span></a>
+      <a href="blog.html"><span data-i18n="nav.blog">SolarBlog</span></a>
       <a href="careers.html"><span data-i18n="nav.careers">Careers</span></a>
       <a href="contact.html"><span data-i18n="nav.contact">Contact</span></a>
       <a href="contact.html#quote" class="btn-quote"><span data-i18n="nav.quote">Request a Quote</span></a>
@@ -47,7 +67,6 @@
 
 <section class="hero">
   <div class="hero-grid"></div>
-  <div class="hero-sweep"></div>
   <div class="wrap">
     <span class="mono eyebrow"><span data-i18n="home.eyebrow">Industrial & Solar Site Services — Uzbekistan</span></span>
     <h1 data-i18n="home.h1">Keeping every panel, and every site, performing.</h1>
@@ -57,15 +76,118 @@
       <a href="services.html" class="btn btn-ghost"><span data-i18n="home.btn_services">View Services</span></a>
     </div>
   </div>
+  <div class="mascot-hero-wrap" id="mascotWrap">
+    <div class="mascot-bubble" id="mascotBubble">
+      <span class="mascot-bubble-text" data-i18n="mascot.prompt">Hi! Click me</span>
+    </div>
+    <button class="mascot-hero-btn" id="mascotBtn" aria-label="Greeting">
+      <svg viewBox="0 0 140 320" class="mascot-hero-svg">
+        <defs>
+          <linearGradient id="jacketGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#22452F"/>
+            <stop offset="55%" stop-color="#1B3A2C"/>
+            <stop offset="100%" stop-color="#14291F"/>
+          </linearGradient>
+          <linearGradient id="lapelGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#102A20"/>
+            <stop offset="100%" stop-color="#0D2019"/>
+          </linearGradient>
+          <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EAC98C"/>
+            <stop offset="100%" stop-color="#D9AE72"/>
+          </linearGradient>
+          <linearGradient id="tieGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#E0BE72"/>
+            <stop offset="100%" stop-color="#A87B2A"/>
+          </linearGradient>
+          <linearGradient id="trouserGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#183324"/>
+            <stop offset="100%" stop-color="#0F221C"/>
+          </linearGradient>
+        </defs>
+
+        <ellipse cx="70" cy="308" rx="46" ry="9" fill="rgba(0,0,0,.3)"/>
+
+        <g class="mascot-body">
+          <!-- legs -->
+          <rect x="44" y="192" width="17" height="86" rx="6" fill="url(#trouserGrad)"/>
+          <rect x="79" y="192" width="17" height="86" rx="6" fill="url(#trouserGrad)"/>
+          <rect x="44" y="230" width="17" height="3" fill="rgba(0,0,0,.2)"/>
+          <rect x="79" y="230" width="17" height="3" fill="rgba(0,0,0,.2)"/>
+          <!-- shoes -->
+          <path d="M38 270h27q3 0 3 4v6q0 4-4 4H41q-5 0-6-4l-1-6q-1-4 4-4Z" fill="#0A1712"/>
+          <path d="M73 270h27q5 0 4 4l-1 6q-1 4-6 4H77q-4 0-4-4v-6q0-4 4-4Z" fill="#0A1712"/>
+          <rect x="38" y="269" width="27" height="3" rx="1.5" fill="#F6F3EA"/>
+          <rect x="73" y="269" width="27" height="3" rx="1.5" fill="#F6F3EA"/>
+
+          <!-- arms (behind torso) -->
+          <g class="mascot-arm-left">
+            <rect x="15" y="100" width="19" height="78" rx="9.5" fill="url(#jacketGrad)"/>
+            <rect x="15" y="160" width="19" height="10" fill="rgba(0,0,0,.15)"/>
+            <circle cx="25" cy="181" r="9.5" fill="url(#skinGrad)"/>
+          </g>
+          <g class="mascot-arm-right">
+            <rect x="106" y="100" width="19" height="78" rx="9.5" fill="url(#jacketGrad)"/>
+            <rect x="106" y="160" width="19" height="10" fill="rgba(0,0,0,.15)"/>
+            <circle cx="115" cy="181" r="9.5" fill="url(#skinGrad)"/>
+          </g>
+
+          <!-- jacket torso -->
+          <path d="M34 100 Q34 90 47 88 L70 99 L93 88 Q106 90 106 100 L110 192 Q70 206 30 192 Z" fill="url(#jacketGrad)"/>
+          <!-- side shading -->
+          <path d="M34 100 Q34 90 47 88 L58 95 L44 195 Q35 191 30 192Z" fill="rgba(0,0,0,.14)"/>
+          <!-- lapels -->
+          <path d="M47 88 L70 99 L62 134 L48 100Z" fill="url(#lapelGrad)"/>
+          <path d="M93 88 L70 99 L78 134 L92 100Z" fill="url(#lapelGrad)"/>
+          <!-- buttons -->
+          <circle cx="70" cy="160" r="2.2" fill="#0A1712"/>
+          <circle cx="70" cy="174" r="2.2" fill="#0A1712"/>
+          <!-- shirt -->
+          <path d="M59 90 L70 99 L81 90 L79 130 L61 130Z" fill="#F8F5EC"/>
+          <path d="M59 90 L70 99 L67 104 L57 93Z" fill="#E9E4D4"/>
+          <path d="M81 90 L70 99 L73 104 L83 93Z" fill="#E9E4D4"/>
+          <!-- tie -->
+          <path d="M66 95 L74 95 L77 116 L70 136 L63 116Z" fill="url(#tieGrad)"/>
+          <path d="M66 95 L74 95 L73 101 L67 101Z" fill="#8E6820"/>
+
+          <!-- neck -->
+          <rect x="60" y="68" width="20" height="26" rx="7" fill="url(#skinGrad)"/>
+          <rect x="60" y="86" width="20" height="8" fill="rgba(0,0,0,.12)"/>
+
+          <!-- head -->
+          <circle cx="70" cy="53" r="27" fill="url(#skinGrad)"/>
+          <!-- ears -->
+          <circle cx="43" cy="55" r="4.5" fill="#D9AE72"/>
+          <circle cx="97" cy="55" r="4.5" fill="#D9AE72"/>
+          <!-- hair -->
+          <path d="M42 50 A28 28 0 0 1 98 50 Q99 36 88 28 Q78 21 70 22 Q62 21 52 28 Q41 36 42 50Z" fill="#2A211C"/>
+          <path d="M42 50 Q40 44 44 38" stroke="#1C1611" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M98 50 Q100 44 96 38" stroke="#1C1611" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- eyebrows -->
+          <path d="M54 50q6-4 12-1" stroke="#2A211C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M74 49q6-3 12 1" stroke="#2A211C" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <!-- eyes -->
+          <ellipse cx="60" cy="57" rx="2.6" ry="3" fill="#20140E"/>
+          <ellipse cx="80" cy="57" rx="2.6" ry="3" fill="#20140E"/>
+          <!-- nose -->
+          <path d="M69 58q1 5-1 8" stroke="#C4986A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <!-- mouth -->
+          <path d="M60 70q10 7 20 0" stroke="#7A4A2E" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <!-- cheek shading -->
+          <ellipse cx="70" cy="66" rx="16" ry="9" fill="rgba(200,120,60,.08)"/>
+        </g>
+      </svg>
+    </button>
+  </div>
 </section>
 
 <div class="stats section-dark" style="padding:0;">
   <div class="wrap" style="padding:0;">
     <div class="stats">
-      <div class="stat"><div class="num">06</div><div class="label"><span data-i18n="home.stat1_label">Core service lines</span></div></div>
+      <div class="stat"><div class="num" data-count="6" data-format="pad2">00</div><div class="label"><span data-i18n="home.stat1_label">Core service lines</span></div></div>
       <div class="stat"><div class="num">HSE</div><div class="label"><span data-i18n="home.stat2_label">Led on every site</span></div></div>
-      <div class="stat"><div class="num">24/7</div><div class="label"><span data-i18n="home.stat3_label">Support availability</span></div></div>
-      <div class="stat"><div class="num">1</div><div class="label"><span data-i18n="home.stat4_label">Team, full site lifecycle</span></div></div>
+      <div class="stat"><div class="num" data-count="24" data-suffix="/7">0/7</div><div class="label"><span data-i18n="home.stat3_label">Support availability</span></div></div>
+      <div class="stat"><div class="num" data-count="1">0</div><div class="label"><span data-i18n="home.stat4_label">Team, full site lifecycle</span></div></div>
     </div>
   </div>
 </div>
@@ -155,10 +277,40 @@
       </div>
       <div class="footer-bottom">
         <span><span data-i18n="footer.copyright">© 2026 Solar Care Group. All rights reserved.</span></span>
+        <a href="privacy.html" style="color:rgba(255,255,255,.6);"><span data-i18n="footer.privacy">Privacy Policy</span></a>
         <span class="mono"><span data-i18n="footer.location">Tashkent, Uzbekistan</span></span>
       </div>
     </div>
   </footer>
+<div class="support-tab" id="supportTab">
+    <button class="support-tab-toggle" id="supportToggle" aria-label="Support">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 0 0-7 7v3a2 2 0 0 0 2 2h1v-6H6v-1a6 6 0 0 1 12 0v1h-2v6h1a2 2 0 0 0 2-2v-3a7 7 0 0 0-7-7Z"/><path d="M6 14v2a2 2 0 0 0 2 2h2"/></svg>
+      <span class="support-tab-label mono" data-i18n="support.tab">Support</span>
+    </button>
+    <div class="support-panel" id="supportPanel">
+      <div class="support-panel-title mono" data-i18n="support.title">Talk to us</div>
+      <a class="support-item" href="tel:+998973427633">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L7.9 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6A2 2 0 0 1 22 16.9Z"/></svg>
+        <span>+998 97 342 76 33</span>
+      </a>
+      <a class="support-item" href="https://t.me/solarcaregroup" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 4L2.5 11.5l6 2M21 4L15.5 21l-7-7.5M21 4L8.5 13.5"/></svg>
+        <span>Telegram</span>
+      </a>
+      <a class="support-item" href="https://wa.me/998973427633" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21l1.4-4.3A8.5 8.5 0 1 1 8 19.6Z"/><path d="M8.5 8.8c.2-.5.6-.5 1-.5h.6c.2 0 .5 0 .7.5s.7 1.7.7 1.9 0 .3-.2.5l-.5.6c-.1.2-.2.3 0 .6.2.3.8 1.2 1.7 1.9 1.1.9 1.9 1.2 2.2 1.3.2.1.4.1.5-.1l.7-.8c.2-.3.4-.2.7-.1l1.6.8c.2.1.4.2.4.4 0 .6-.5 1.6-1.4 1.9-.8.3-1.7.4-2.9-.2a9.4 9.4 0 0 1-4.2-3.7c-.7-.9-1.1-2-1.2-2.8-.1-.7.1-1.4.6-1.9Z" fill="currentColor" stroke="none"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a class="support-item" href="mailto:solarcaregroupuz@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span>solarcaregroupuz@gmail.com</span>
+      </a>
+    </div>
+  </div>
+<div class="sticky-quote" id="stickyQuote">
+    <span data-i18n="stickybar.text">Ready to get your site cleaned and maintained?</span>
+    <a href="contact.html#quote" class="btn btn-primary"><span data-i18n="nav.quote">Request a Quote</span></a>
+  </div>
 <script src="js/translations.js"></script>
 <script src="js/script.js"></script>
 </body>
